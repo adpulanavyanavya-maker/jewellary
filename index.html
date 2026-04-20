@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Jewelry Store - Premium Collections</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">✨ LuxeJewels</div>
+            <nav class="nav-menu">
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#about">About</a>
+                <a href="#testimonials">Reviews</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="cart-icon">
+                🛒 <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Timeless Elegance</h1>
+            <p>Discover Our Exquisite Jewelry Collection</p>
+            <button class="cta-btn">Explore Collection</button>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured" id="products">
+        <div class="container">
+            <h2>Featured Collections</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="rings">Rings</button>
+                <button class="filter-btn" data-filter="necklaces">Necklaces</button>
+                <button class="filter-btn" data-filter="bracelets">Bracelets</button>
+                <button class="filter-btn" data-filter="earrings">Earrings</button>
+            </div>
+
+            <div class="product-grid">
+                <!-- Ring 1 -->
+                <div class="product-card" data-category="rings">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/250x250?text=Gold+Ring" alt="Gold Ring">
+                        <span class="badge">New</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Classic Gold Ring</h3>
+                        <div class="rating">⭐⭐⭐⭐⭐ (24)</div>
+                        <p class="description">18K gold with elegant finish</p>
+                        <div class="price-section">
+                            <span class="price">$349.99</span>
+                            <span class="original-price">$499.99</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Necklace 1 -->
+                <div class="product-card" data-category="necklaces">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/250x250?text=Diamond+Necklace" alt="Diamond Necklace">
+                        <span class="badge hot">Hot</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Diamond Necklace</h3>
+                        <div class="rating">⭐⭐⭐⭐⭐ (18)</div>
+                        <p class="description">Premium diamonds with platinum chain</p>
+                        <div class="price-section">
+                            <span class="price">$799.99</span>
+                            <span class="original-price">$999.99</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Bracelet 1 -->
+                <div class="product-card" data-category="bracelets">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/250x250?text=Pearl+Bracelet" alt="Pearl Bracelet">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pearl Bracelet</h3>
+                        <div class="rating">⭐⭐⭐⭐ (15)</div>
+                        <p class="description">Authentic freshwater pearls</p>
+                        <div class="price-section">
+                            <span class="price">$449.99</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Earrings 1 -->
+                <div class="product-card" data-category="earrings">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/250x250?text=Crystal+Earrings" alt="Crystal Earrings">
+                        <span class="badge">Sale</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Crystal Earrings</h3>
+                        <div class="rating">⭐⭐⭐⭐⭐ (32)</div>
+                        <p class="description">Swarovski crystals with gold plating</p>
+                        <div class="price-section">
+                            <span class="price">$199.99</span>
+                            <span class="original-price">$299.99</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Ring 2 -->
+                <div class="product-card" data-category="rings">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/250x250?text=Emerald+Ring" alt="Emerald Ring">
+                    </div>
+                    <div class="product-info">
+                        <h3>Emerald Ring</h3>
+                        <div class="rating">⭐⭐⭐⭐⭐ (28)</div>
+                        <p class="description">Natural emerald with diamond accents</p>
+                        <div class="price-section">
+                            <span class="price">$599.99</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Necklace 2 -->
+                <div class="product-card" data-category="necklaces">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/250x250?text=Silver+Necklace" alt="Silver Necklace">
+                    </div>
+                    <div class="product-info">
+                        <h3>Silver Pendant</h3>
+                        <div class="rating">⭐⭐⭐⭐ (21)</div>
+                        <p class="description">Sterling silver with minimalist design</p>
+                        <div class="price-section">
+                            <span class="price">$279.99</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Bracelet 2 -->
+                <div class="product-card" data-category="bracelets">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/250x250?text=Gold+Bracelet" alt="Gold Bracelet">
+                        <span class="badge">New</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Gold Bangle</h3>
+                        <div class="rating">⭐⭐⭐⭐⭐ (19)</div>
+                        <p class="description">22K gold traditional design</p>
+                        <div class="price-section">
+                            <span class="price">$649.99</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Earrings 2 -->
+                <div class="product-card" data-category="earrings">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/250x250?text=Ruby+Earrings" alt="Ruby Earrings">
+                    </div>
+                    <div class="product-info">
+                        <h3>Ruby Earrings</h3>
+                        <div class="rating">⭐⭐⭐⭐⭐ (26)</div>
+                        <p class="description">Natural rubies with gold setting</p>
+                        <div class="price-section">
+                            <span class="price">$549.99</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About LuxeJewels</h2>
+                    <p>With over 20 years of expertise, we craft the finest jewelry pieces that celebrate life's special moments. Each piece is meticulously designed and crafted by our master artisans.</p>
+                    <ul class="features-list">
+                        <li>✓ 100% Authentic Materials</li>
+                        <li>✓ Lifetime Warranty</li>
+                        <li>✓ Expert Craftsmanship</li>
+                        <li>✓ Free Shipping Worldwide</li>
+                        <li>✓ 30-Day Returns</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/400x300?text=About+LuxeJewels" alt="About Us">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2>Customer Reviews</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Absolutely stunning jewelry! The quality exceeded my expectations. Highly recommend!"</p>
+                    <h4>Sarah Johnson</h4>
+                    <span>Verified Purchase</span>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Best customer service and beautiful designs. My engagement ring is perfect!"</p>
+                    <h4>Michael Chen</h4>
+                    <span>Verified Purchase</span>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Worth every penny! The craftsmanship is incredible. Already ordered again!"</p>
+                    <h4>Emma Rodriguez</h4>
+                    <span>Verified Purchase</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h4>📍 Address</h4>
+                        <p>123 Jewelry Street, New York, NY 10001</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>📞 Phone</h4>
+                        <p>1-800-JEWELRY</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>📧 Email</h4>
+                        <p>info@luxejewels.com</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>🕒 Hours</h4>
+                        <p>Mon - Fri: 9AM - 6PM EST</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About</h4>
+                    <a href="#about">About Us</a>
+                    <a href="#products">Products</a>
+                    <a href="#">Blog</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <a href="#">FAQs</a>
+                    <a href="#">Shipping Info</a>
+                    <a href="#">Returns</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 LuxeJewels. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
